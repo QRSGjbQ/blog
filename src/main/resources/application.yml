@@ -1,0 +1,18 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useUnicode=true&characterEncoding=utf-8&&serverTimezone=UTC
+    username: root
+    password: 123
+  thymeleaf:
+    mode: HTML
+    cache: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+comment.avatar: /images/avatar.png
